@@ -57,7 +57,20 @@ git commit -am "__Commit_Message__"    // move file and foler to stage and try t
 git log   // confirm git local repository
 ```   
 # Pattern
+choose one
 ```
-git remote add __nickname__ __remoteURL__       // At Folder, connect gitHub (already lots of files or folders is) 
-git clone __RemoteURL__ __NickName__            // To Folder, clone data from gitHub (empty folder)
+1. git remote add __nickname__ __remoteURL__       // At Folder, connect gitHub (already lots of files or folders is) 
+2. git clone __RemoteURL__ __NickName__            // To Folder, clone data from gitHub (empty folder)
+```
+```
+// 1st use
+git add .
+git commit -m "__"
+git push __RemoteNickName__ __BranchName__
+
+// above 2st use
+git pull __RemoteNickName__ __BranchName__
+git add .
+git commit -m "__"
+git push __RemoteNickName__ __BranchName__
 ```
