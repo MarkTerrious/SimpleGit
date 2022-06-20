@@ -23,28 +23,37 @@ Global (including "") <br>
 - git remote rename __From_RemoteNickName__ __To_RemoteNickName2__   
    
 # Create Project Folder
-- mkdir __      // project name at __
-- cd __         // move to folder that you just created before
+
+1. project name at __
+2. move to folder that you just created before
+
+- mkdir __      
+- cd __        
   
 # Init
+1. init
+2. confirm it's made
+3. for Local, confirm how to config
+4. search including hide file
+
 - git init
-- ls .git           // confirm it's made 
-- ls ~/.gitconfig   // for Local, confirm how to config
-- ls -a             // search including hide file
+- ls .git           
+- ls ~/.gitconfig    
+- ls -a              
   
 # Start the project
    ---------------------- Untracked -------------------------------
-- git clone __RemoteURL__ __NickName__ 
-- git add __FileName__             // track specific file or folder name
-- git add .                        // track all of file and folder
-- git status                       // check modified status
-   
-   { <br>
-      // didn't commit yet <br>
-      git rm --cached __FileName__     // make files (here : __FileName__) on stage untracked
-      // already commited <br>
-      git reset HEAD __FileName__      // make files untracked
-   } <br>
+```
+   git clone __RemoteURL__ __NickName__   // bring data from gitHub
+   git add __FileName__                   // track specific file or folder name
+   git add .                              // track all of file and folder
+   git status                             // check modified status
+```
+
+```
+   git rm --cached __FileName__     // make files (here : __FileName__) on stage untracked (not commited)
+   git reset HEAD __FileName__      // make files untracked (already commited)
+```
    ----------------------- tracked --------------------------------
 - git commit -m "__Commit_Message__"     // commit with message
    
