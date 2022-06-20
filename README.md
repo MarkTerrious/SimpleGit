@@ -1,7 +1,7 @@
 # SimpleGit
 How to use git as a simple. == Git Tutorial
 
-1. Enviroment
+# Enviroment
    you can simply set this config after or before creating folder
 the case before, it is used to all folder.
 
@@ -13,25 +13,25 @@ Global (including "")
   git config --global user.name "MarkTerrious"
   git config --global user.email "_____@gmail.com"
 
-Remote
-   # Connect with Specific Remote Repository
+# Remote
+   - Connect with Specific Remote Repository
    git remote add __RemoteNickNameAboutURL__ __RemoteURL__  
-   # show all of remote repositroy url
+   - show all of remote repositroy url
    git remote -v      
-   # change nickname ex) origin -> main
+   - change nickname ex) origin -> main
    git remote rename __From_RemoteNickName__ __To_RemoteNickName2__
    
-2. Create Project Folder
+# Create Project Folder
   mkdir __      // project name at __
   cd __         // move to folder that you just created before
   
-3. Init
+# Init
   git init
   ls .git           // confirm it's made 
   ls ~/.gitconfig   // for Local, confirm how to config
   ls -a             // search including hide file
   
-4. Start the project
+# Start the project
    ---------------------- Untracked -------------------------------
    git clone __RemoteURL__ __NickName__ 
    git add __FileName__             // track specific file or folder name
@@ -53,11 +53,11 @@ Remote
       git commit -am "__Commit_Message__"    // move file and foler to stage and try to commit. 
    }
    
-5. Git Commited log
+# Git Commited log
    git log                          // confirm git local repository
    
 # Pattern
-# At Folder, connect gitHub (already lots of files or folders is) 
+- At Folder, connect gitHub (already lots of files or folders is) 
 git remote add __nickname__ __remoteURL__
-# To Folder, clone data from gitHub (empty folder)
+- To Folder, clone data from gitHub (empty folder)
 git clone __RemoteURL__ __NickName__
