@@ -1,0 +1,15 @@
+.gitignore
+List of not uploaded file or folder    
+
+# <- is a comment
+
+# Ignore File List.
+FileName.exe
+FileName.java
+
+=> do not upload FileName.exe, FileName.java to git.
+
+*.config    //  don't include Anyname with .config 
+/**/*.js    //  including current folder and subFolder of current folder, excluding .js file
+/*.{js,ts}  //  excluding .js or .ts file in current directory
+
