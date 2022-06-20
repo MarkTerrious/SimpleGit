@@ -5,7 +5,7 @@ How to use git as a simple. == Git Tutorial
    you can simply set this config after or before creating folder
 the case before, it is used to all folder.
 
-Local
+Local <br>
   git config user.name
   git config user.email
   
